@@ -1,0 +1,42 @@
+---
+import type { CampusCard } from "../content/siteContent";
+import SectionHeading from "./SectionHeading.astro";
+
+interface Props {
+  section: {
+    id: string;
+    eyebrow: string;
+    title: string;
+    description: string;
+    cards: CampusCard[];
+  };
+}
+
+const { section } = Astro.props;
+const withBase = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
+---
+
+<section id={section.id} class="section">
+  <div class="container">
+    <SectionHeading
+      eyebrow={section.eyebrow}
+      title={section.title}
+      description={section.description}
+    />
+    <div class="campus-grid">
+      {
+        section.cards.map((card, index) => (
+          <article class="campus-card" data-reveal style={`--delay: ${100 + index * 90}ms`}>
+            <figure class:list={["campus-image", card.ratio === "1:1" && "is-square"]}>
+              <img src={withBase(card.image)} alt={card.imageAlt} loading="lazy" decoding="async" />
+            </figure>
+            <div class="campus-body">
+              <h3>{card.title}</h3>
+              <p>{card.description}</p>
+            </div>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,39 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+interface Props {
+  section: {
+    id: string;
+    eyebrow: string;
+    title: string;
+    description: string;
+    primaryAction: {
+      label: string;
+      href: string;
+    };
+    secondaryAction: {
+      label: string;
+      href: string;
+    };
+  };
+}
+
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="section">
+  <div class="container">
+    <div class="cta-panel" data-reveal>
+      <SectionHeading
+        eyebrow={section.eyebrow}
+        title={section.title}
+        description={section.description}
+        center={true}
+      />
+      <div class="cta-actions">
+        <a class="button" href={section.primaryAction.href} target="_blank" rel="noreferrer">{section.primaryAction.label}</a>
+        <a class="button is-secondary" href={section.secondaryAction.href}>{section.secondaryAction.label}</a>
+      </div>
+    </div>
+  </div>
+</section>

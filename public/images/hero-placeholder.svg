@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="ヒーロー仮画像">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff6d5" />
+      <stop offset="1" stop-color="#ffd3e0" />
+    </linearGradient>
+    <linearGradient id="hill" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#58d6c0" />
+      <stop offset="1" stop-color="#2f8ee5" />
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#sky)" />
+  <circle cx="1040" cy="170" r="78" fill="#fdb72e" opacity="0.8" />
+  <path d="M0 500c140-70 270-70 410 0s280 70 420 0 290-70 450 0v220H0z" fill="url(#hill)" />
+  <rect x="160" y="260" width="290" height="170" rx="20" fill="#ffffff" opacity="0.72" />
+  <rect x="500" y="230" width="200" height="200" rx="24" fill="#ffffff" opacity="0.58" />
+  <rect x="760" y="280" width="360" height="150" rx="20" fill="#ffffff" opacity="0.74" />
+  <text x="194" y="328" fill="#ea3f6d" font-size="34" font-family="'M PLUS Rounded 1c', sans-serif" font-weight="700">神山まるごと高専</text>
+  <text x="194" y="374" fill="#27323d" font-size="24" font-family="'M PLUS Rounded 1c', sans-serif">ここに正式写真へ差し替え</text>
+  <text x="776" y="352" fill="#2f8ee5" font-size="26" font-family="'M PLUS Rounded 1c', sans-serif" font-weight="700">推奨比率: 横長 16:9</text>
+</svg>

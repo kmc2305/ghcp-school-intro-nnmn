@@ -1,0 +1,25 @@
+---
+import type { NavItem } from "../content/siteContent";
+
+interface Props {
+  brand: string;
+  items: NavItem[];
+}
+
+const { brand, items } = Astro.props;
+---
+
+<header class="site-nav-wrap">
+  <nav class="site-nav container" aria-label="ページ内ナビゲーション" data-reveal>
+    <a class="site-brand" href="#top">{brand}</a>
+    <ul class="site-nav-list">
+      {
+        items.map((item) => (
+          <li>
+            <a href={item.href}>{item.label}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>

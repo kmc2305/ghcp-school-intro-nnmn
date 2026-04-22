@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="制作スペースの仮画像">
+  <rect width="800" height="600" fill="#fff4dc" />
+  <rect x="80" y="90" width="640" height="420" rx="28" fill="#ffffff" stroke="#39cbb2" stroke-width="10" />
+  <circle cx="190" cy="210" r="44" fill="#ff5f85" opacity="0.75" />
+  <circle cx="300" cy="210" r="44" fill="#2f8ee5" opacity="0.75" />
+  <circle cx="410" cy="210" r="44" fill="#fdb72e" opacity="0.75" />
+  <rect x="170" y="310" width="460" height="46" rx="18" fill="#39cbb2" opacity="0.82" />
+  <text x="174" y="386" fill="#27323d" font-size="40" font-family="'M PLUS Rounded 1c', sans-serif" font-weight="700">4:3 推奨</text>
+  <text x="174" y="438" fill="#576273" font-size="28" font-family="'M PLUS Rounded 1c', sans-serif">プロトタイピング画像に差し替え</text>
+</svg>
