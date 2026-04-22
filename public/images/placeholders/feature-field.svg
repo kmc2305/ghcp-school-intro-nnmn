@@ -1,0 +1,16 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fieldGrad" x1="0" y1="60" x2="780" y2="600" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DFF8EC" />
+      <stop offset="1" stop-color="#DFF4FF" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="36" fill="url(#fieldGrad)" />
+  <path d="M0 356C126 296 232 312 338 356C444 400 550 422 800 340V600H0V356Z" fill="#BCEED9" />
+  <path d="M0 430C170 374 264 388 430 430C596 472 652 476 800 422V600H0V430Z" fill="#A7DFD4" fill-opacity="0.68" />
+  <circle cx="636" cy="160" r="64" fill="#FFE9DA" />
+  <rect x="132" y="220" width="160" height="120" rx="18" fill="#FFFFFF" fill-opacity="0.74" />
+  <rect x="330" y="190" width="160" height="150" rx="18" fill="#FFFFFF" fill-opacity="0.74" />
+  <rect x="528" y="230" width="160" height="110" rx="18" fill="#FFFFFF" fill-opacity="0.74" />
+  <text x="400" y="520" text-anchor="middle" fill="#19303F" fill-opacity="0.55" font-family="sans-serif" font-size="30" font-weight="700">Community Field</text>
+</svg>

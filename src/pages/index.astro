@@ -1,0 +1,26 @@
+---
+import FeatureSection from "../components/FeatureSection.astro";
+import HeroSection from "../components/HeroSection.astro";
+import LifeSection from "../components/LifeSection.astro";
+import LinkCtaSection from "../components/LinkCtaSection.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { siteContent } from "../data/siteContent";
+---
+
+<BaseLayout
+  description="神山まるごと高専の特徴、学生生活、公式情報への導線を1ページで紹介します。"
+  title="神山まるごと高専 紹介サイト"
+>
+  <HeroSection content={siteContent.hero} />
+  <FeatureSection
+    cards={siteContent.features}
+    intro="テクノロジーだけでなく、デザインや地域との協働までを含めた学びの設計が特徴です。"
+    title="神山まるごと高専の特徴"
+  />
+  <LifeSection
+    cards={siteContent.life}
+    intro="日々の学びは、授業時間だけで完結しません。生活の中での対話や活動が、次の挑戦につながります。"
+    title="学生生活"
+  />
+  <LinkCtaSection content={siteContent.officialLink} />
+</BaseLayout>

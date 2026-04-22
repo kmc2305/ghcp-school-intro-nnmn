@@ -1,0 +1,48 @@
+---
+import type { HeroContent } from "../data/siteContent";
+
+interface Props {
+  content: HeroContent;
+}
+
+const { content } = Astro.props;
+---
+
+<section class="section-shell pt-8 md:pt-14" id="top">
+  <div class="grid gap-6 rounded-[2rem] border border-[color:var(--color-line)] bg-white/82 p-6 shadow-[var(--shadow-soft)] backdrop-blur md:grid-cols-[1.1fr_1fr] md:gap-10 md:p-10">
+    <div class="float-in space-y-6">
+      <p class="tag-chip inline-flex">{content.eyebrow}</p>
+      <h1 class="display-heading text-4xl leading-tight text-[color:var(--color-ink)] md:text-6xl">
+        {content.title}
+      </h1>
+      <p class="max-w-xl text-base leading-relaxed md:text-lg">{content.description}</p>
+      <div class="flex flex-wrap gap-3">
+        <a
+          class="rounded-full bg-[color:var(--color-berry)] px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
+          href="#features"
+        >
+          特徴を見る
+        </a>
+        <a
+          class="rounded-full border border-[color:var(--color-line)] bg-white px-6 py-3 text-sm font-bold transition hover:-translate-y-0.5 hover:border-[color:var(--color-berry)]"
+          href={content.primaryCtaHref}
+          rel="noreferrer"
+          target="_blank"
+        >
+          {content.primaryCtaLabel}
+        </a>
+      </div>
+    </div>
+
+    <div class="relative overflow-hidden rounded-[1.75rem] border border-white/60 bg-white/70 p-3">
+      <img
+        alt={content.image.alt}
+        class="h-full w-full rounded-[1.1rem] object-cover"
+        loading="eager"
+        src={content.image.src}
+      />
+      <div class="pointer-events-none absolute -left-6 -top-6 h-24 w-24 rounded-full bg-[color:var(--color-mint)]/70 blur-2xl"></div>
+      <div class="pointer-events-none absolute -bottom-8 right-2 h-28 w-28 rounded-full bg-[color:var(--color-peach)]/70 blur-2xl"></div>
+    </div>
+  </div>
+</section>
