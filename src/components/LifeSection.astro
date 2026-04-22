@@ -1,0 +1,38 @@
+---
+import type { ContentCard } from "../data/siteContent";
+
+interface Props {
+  title: string;
+  intro: string;
+  cards: ContentCard[];
+  id?: string;
+}
+
+const { title, intro, cards, id = "life" } = Astro.props;
+---
+
+<section class="section-shell mt-12 md:mt-16" id={id}>
+  <div class="mb-6 md:mb-8">
+    <p class="tag-chip inline-flex">Student Life</p>
+    <h2 class="display-heading mt-3 text-3xl md:text-4xl">{title}</h2>
+    <p class="mt-3 max-w-3xl leading-relaxed">{intro}</p>
+  </div>
+
+  <div class="grid gap-4 md:grid-cols-3">
+    {
+      cards.map((item, index) => (
+        <article class="story-card relative overflow-hidden rounded-[1.5rem] border border-[color:var(--color-line)] bg-white/85 p-5 shadow-[var(--shadow-soft)]">
+          <p class="text-xs font-bold uppercase tracking-[0.16em] text-[color:var(--color-berry)]">Scene {index + 1}</p>
+          <img
+            alt={item.image.alt}
+            class="mt-3 aspect-[4/3] w-full rounded-xl object-cover"
+            loading="lazy"
+            src={item.image.src}
+          />
+          <h3 class="mt-4 text-lg font-bold">{item.title}</h3>
+          <p class="mt-2 text-sm leading-relaxed text-[color:var(--color-ink)]/90">{item.description}</p>
+        </article>
+      ))
+    }
+  </div>
+</section>

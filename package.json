@@ -1,0 +1,22 @@
+{
+  "name": "ghcp-school-intro-nnmn",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev --host --port 4321",
+    "build": "astro check && astro build",
+    "preview": "astro preview --host --port 4321"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "^6.0.2",
+    "@fontsource/m-plus-rounded-1c": "^5.2.6",
+    "@fontsource/zen-kaku-gothic-new": "^5.2.7",
+    "astro": "^5.9.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.8",
+    "@types/node": "^22.15.19",
+    "typescript": "^5.9.3"
+  }
+}

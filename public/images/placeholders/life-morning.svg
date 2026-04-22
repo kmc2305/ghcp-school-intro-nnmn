@@ -1,0 +1,12 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="36" fill="#FFF4E9" />
+  <circle cx="170" cy="120" r="64" fill="#FFD8AE" />
+  <rect x="128" y="210" width="544" height="290" rx="24" fill="#FFFFFF" fill-opacity="0.8" />
+  <rect x="178" y="260" width="190" height="18" rx="9" fill="#FFE3C8" />
+  <rect x="178" y="294" width="448" height="14" rx="7" fill="#F6E5D0" />
+  <rect x="178" y="324" width="356" height="14" rx="7" fill="#F6E5D0" />
+  <rect x="178" y="370" width="126" height="90" rx="14" fill="#DFF4FF" />
+  <rect x="324" y="370" width="126" height="90" rx="14" fill="#DFF8EC" />
+  <rect x="470" y="370" width="156" height="90" rx="14" fill="#FFE9DA" />
+  <text x="400" y="540" text-anchor="middle" fill="#19303F" fill-opacity="0.55" font-family="sans-serif" font-size="28" font-weight="700">Morning Check-in</text>
+</svg>

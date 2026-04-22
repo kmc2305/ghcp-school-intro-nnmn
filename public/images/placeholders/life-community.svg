@@ -1,0 +1,11 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="600" rx="36" fill="#ECFAF2" />
+  <path d="M0 420C110 360 226 332 370 366C514 400 650 454 800 394V600H0V420Z" fill="#C7F1DF" />
+  <path d="M70 324L160 250L250 324V452H70V324Z" fill="#FFFFFF" fill-opacity="0.8" />
+  <path d="M286 292L386 212L486 292V452H286V292Z" fill="#FFFFFF" fill-opacity="0.84" />
+  <path d="M522 332L610 264L698 332V452H522V332Z" fill="#FFFFFF" fill-opacity="0.8" />
+  <rect x="114" y="356" width="30" height="96" rx="8" fill="#CBE5FF" />
+  <rect x="368" y="344" width="34" height="108" rx="8" fill="#FFD6C0" />
+  <rect x="594" y="362" width="32" height="90" rx="8" fill="#CBE5FF" />
+  <text x="400" y="540" text-anchor="middle" fill="#19303F" fill-opacity="0.55" font-family="sans-serif" font-size="28" font-weight="700">Community Life</text>
+</svg>
