@@ -1,0 +1,19 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  pageTitle="ページが見つかりません | 神山まるごと高専"
+  description="指定されたページは存在しないか、移動した可能性があります。"
+>
+  <main class="section">
+    <div class="container">
+      <div class="not-found" data-reveal>
+        <p class="section-eyebrow">404 NOT FOUND</p>
+        <h1>ページが見つかりませんでした</h1>
+        <p>URLを確認するか、トップページからもう一度ご覧ください。</p>
+        <a class="button" href={`${import.meta.env.BASE_URL}`}>トップへ戻る</a>
+      </div>
+    </div>
+  </main>
+</BaseLayout>

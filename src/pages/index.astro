@@ -1,0 +1,29 @@
+---
+import AccessSection from "../components/AccessSection.astro";
+import CampusLifeSection from "../components/CampusLifeSection.astro";
+import CtaSection from "../components/CtaSection.astro";
+import FeatureGrid from "../components/FeatureGrid.astro";
+import HeroSection from "../components/HeroSection.astro";
+import NavBar from "../components/NavBar.astro";
+import {
+  accessSection,
+  campusLifeSection,
+  ctaSection,
+  heroContent,
+  navItems,
+  philosophySection,
+  siteMeta
+} from "../content/siteContent";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout pageTitle={siteMeta.title} description={siteMeta.description} ogImage={siteMeta.ogImage}>
+  <NavBar brand={siteMeta.shortName} items={navItems} />
+  <main>
+    <HeroSection hero={heroContent} />
+    <FeatureGrid section={philosophySection} />
+    <CampusLifeSection section={campusLifeSection} />
+    <AccessSection section={accessSection} />
+    <CtaSection section={ctaSection} />
+  </main>
+</BaseLayout>

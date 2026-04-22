@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="OGP 仮画像">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#fff0d0" />
+      <stop offset="1" stop-color="#e9fbff" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <circle cx="980" cy="132" r="86" fill="#ff5f85" opacity="0.72" />
+  <circle cx="1080" cy="220" r="56" fill="#39cbb2" opacity="0.72" />
+  <rect x="120" y="140" width="760" height="360" rx="34" fill="#ffffff" stroke="#2f8ee5" stroke-width="8" />
+  <text x="172" y="250" fill="#ea3f6d" font-size="62" font-family="'M PLUS Rounded 1c', sans-serif" font-weight="700">神山まるごと高専</text>
+  <text x="172" y="340" fill="#203145" font-size="44" font-family="'M PLUS Rounded 1c', sans-serif" font-weight="700">ワクワクで未来をつくる学びの場</text>
+  <text x="172" y="418" fill="#576273" font-size="34" font-family="'M PLUS Rounded 1c', sans-serif">正式OGP画像に差し替え可能な仮素材</text>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="地域連携の仮画像">
+  <rect width="800" height="600" fill="#ebf7ff" />
+  <path d="M0 460c120-90 260-90 400 0s280 90 400 0v140H0z" fill="#39cbb2" opacity="0.55" />
+  <rect x="116" y="110" width="568" height="320" rx="28" fill="#ffffff" stroke="#fdb72e" stroke-width="10" />
+  <circle cx="250" cy="250" r="56" fill="#ff5f85" opacity="0.78" />
+  <circle cx="400" cy="250" r="56" fill="#2f8ee5" opacity="0.78" />
+  <circle cx="550" cy="250" r="56" fill="#39cbb2" opacity="0.78" />
+  <text x="166" y="355" fill="#203145" font-size="42" font-family="'M PLUS Rounded 1c', sans-serif" font-weight="700">4:3 推奨</text>
+  <text x="166" y="406" fill="#576273" font-size="28" font-family="'M PLUS Rounded 1c', sans-serif">地域連携写真に差し替え</text>
+</svg>

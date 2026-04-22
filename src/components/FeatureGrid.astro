@@ -1,0 +1,33 @@
+---
+import type { FeatureCard } from "../content/siteContent";
+import SectionHeading from "./SectionHeading.astro";
+
+interface Props {
+  section: {
+    id: string;
+    eyebrow: string;
+    title: string;
+    description: string;
+    features: FeatureCard[];
+  };
+}
+
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="section section-surface">
+  <div class="container">
+    <SectionHeading eyebrow={section.eyebrow} title={section.title} description={section.description} />
+    <div class="feature-grid">
+      {
+        section.features.map((feature, index) => (
+          <article class="feature-card" data-reveal style={`--delay: ${80 + index * 80}ms`}>
+            <p class="feature-label">{feature.label}</p>
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

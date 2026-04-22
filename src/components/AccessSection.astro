@@ -1,0 +1,51 @@
+---
+import SectionHeading from "./SectionHeading.astro";
+
+interface Props {
+  section: {
+    id: string;
+    eyebrow: string;
+    title: string;
+    description: string;
+    campusName: string;
+    address: string;
+    accessList: string[];
+    mapCaption: string;
+  };
+}
+
+const { section } = Astro.props;
+---
+
+<section id={section.id} class="section section-surface">
+  <div class="container access-grid">
+    <div>
+      <SectionHeading
+        eyebrow={section.eyebrow}
+        title={section.title}
+        description={section.description}
+      />
+      <dl class="access-details" data-reveal>
+        <div>
+          <dt>学校名</dt>
+          <dd>{section.campusName}</dd>
+        </div>
+        <div>
+          <dt>所在地</dt>
+          <dd>{section.address}</dd>
+        </div>
+      </dl>
+      <ul class="access-list" data-reveal style="--delay: 120ms">
+        {
+          section.accessList.map((item) => (
+            <li>{item}</li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="map-placeholder" data-reveal style="--delay: 180ms" role="img" aria-label="地図差し替え領域">
+      <p>{section.mapCaption}</p>
+    </div>
+  </div>
+</section>

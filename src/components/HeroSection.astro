@@ -1,0 +1,48 @@
+---
+import type { HeroAction } from "../content/siteContent";
+
+interface Props {
+  hero: {
+    id: string;
+    badge: string;
+    title: string;
+    lead: string;
+    highlightPills: string[];
+    actions: HeroAction[];
+    image: string;
+    imageAlt: string;
+  };
+}
+
+const { hero } = Astro.props;
+const heroImagePath = `${import.meta.env.BASE_URL}${hero.image.replace(/^\/+/, "")}`;
+---
+
+<section id={hero.id} class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-copy" data-reveal>
+      <p class="hero-badge">{hero.badge}</p>
+      <h1>{hero.title}</h1>
+      <p class="hero-lead">{hero.lead}</p>
+      <ul class="hero-pills" aria-label="神山まるごと高専の特徴">
+        {
+          hero.highlightPills.map((pill) => (
+            <li>{pill}</li>
+          ))
+        }
+      </ul>
+      <div class="hero-actions">
+        {
+          hero.actions.map((action) => (
+            <a class:list={["button", action.style === "secondary" && "is-secondary"]} href={action.href}>
+              {action.label}
+            </a>
+          ))
+        }
+      </div>
+    </div>
+    <figure class="hero-visual" data-reveal style="--delay: 140ms">
+      <img src={heroImagePath} alt={hero.imageAlt} loading="eager" decoding="async" />
+    </figure>
+  </div>
+</section>
